@@ -20,7 +20,15 @@
 
      //carrega um usuário usando o login e a senha
 
-    $usuario = new Usuario();
-    $usuario->login("root","$&#*@");
-    echo $usuario;
+    //$usuario = new Usuario();
+    //$usuario->login("root","$&#*@");
+    //echo $usuario;
+
+
+    $aluno = new Usuario("aluno", "@lun0");
+
+
+    $aluno->insert();
+
+    echo $aluno;
  ?>
