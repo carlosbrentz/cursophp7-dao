@@ -24,11 +24,15 @@
     //$usuario->login("root","$&#*@");
     //echo $usuario;
 
+    //Criar um novo usuário
+    //$aluno = new Usuario("aluno", "@lun0");
+    //$aluno->insert();
+    // echo $aluno;
 
-    $aluno = new Usuario("aluno", "@lun0");
+   $usuario = new Usuario();
+   $usuario->loadById(11);
+   $usuario->update("professor", "!&@#*&@#");
 
+   echo $usuario;
 
-    $aluno->insert();
-
-    echo $aluno;
  ?>
